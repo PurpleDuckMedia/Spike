@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">File download Spike</h1>
+    <div class="container py-4">
+        <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+         
+          <p>content-disposition: "inline; filename=sample.pdf"</p>
+          <a class="btn btn-outline-light" href="/api/document/view" type="button">View</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+        
+          <p>content-disposition: "attachment; filename=sample.pdf"</p>
+          <a class="btn btn-outline-secondary" href="/api/document/download" type="button">Download</a>
+        </div>
+      </div>
+    </div>
+    </div>  
+</div>

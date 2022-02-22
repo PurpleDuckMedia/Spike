@@ -3,3 +3,5 @@
 ################################################################################
 
 /FileDownload/bin/Debug/net6.0
+/.vs/FileDownload
+/FileDownload/obj
